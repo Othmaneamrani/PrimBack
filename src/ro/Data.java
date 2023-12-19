@@ -10,15 +10,18 @@ import java.util.Scanner;
 public class Data {
     public static void main(String[] args) throws FileNotFoundException {
     		List<String> list = new ArrayList<>();
-            System.out.println("Entrez le nombre de sommets :");
+            System.out.println("Entrez le nombre d'aretes :");
             Scanner scanner = new Scanner(System.in);
             int nbr = scanner.nextInt();
             for (int i=0 ; i < nbr ; i++) {
             
-            	  System.out.println("Entrez deux sommets puis leurs poids :");
-                  
+            	System.out.println("Arete : " + (i+1));
+            	
+            	  System.out.println("Entrez le premier sommet :");
                   String sommet1 = scanner.next();
+                  System.out.println("Entrez le deuxieme sommet :");
                   String sommet2 = scanner.next();
+                  System.out.println("Entrez le poids de l'arete :");
                   int poids = scanner.nextInt(); 
                   String sommetsEtPoids = sommet1 + " " + sommet2 + " " + poids;
                   list.add(sommetsEtPoids);
